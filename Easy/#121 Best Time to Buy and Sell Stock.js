@@ -48,3 +48,16 @@ const maxProfit = prices => {
   }
   return maxProfit;
 };
+
+// solution out on Leetcode, we are only concerned with the max profit
+
+// var maxProfit = function(prices) {
+//   let max = 0;
+//   let min = Infinity;
+//   for(let i = 0; i < prices.length; i++) {
+//       min = Math.min(min, prices[i]);
+//       max = Math.max(max, prices[i] - min);
+//   }
+
+//   return max;
+// };
