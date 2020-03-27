@@ -28,6 +28,7 @@ class WordCloudData {
       .split(' ')
       .map(word => this.removePunc(word).toLowerCase());
     // now have an array of words split up by the space character and punctuation removed
+    console.log(splitStringArr);
 
     // want to put in our map this.wordsToCount
     splitStringArr.forEach(word => {
@@ -40,10 +41,8 @@ class WordCloudData {
   }
 }
 
-const myWordCloud = new WordCloudData(
-  "Dessert - mille-feuille's cake, and pie!"
-);
-console.log(myWordCloud.punctuation);
+let myWordCloud = new WordCloudData('I like cake').wordsToCounts;
+console.log(myWordCloud);
 
 // Tests
 
