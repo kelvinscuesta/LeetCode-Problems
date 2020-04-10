@@ -1,4 +1,4 @@
-const MinStack = require('../minStack.js');
+const MinStack = require('../Easy/155minStack.js');
 
 // minStack should have a push method
 // pop() to remove top element
