@@ -41,8 +41,15 @@ const numIslands = grid => {
 
     // console.log(grid[x].length);
     // console.log(y);
-    // work below
+
+    // above
+    if (x - 1 >= 0) convertIslandToZero(x - 1, y, grid);
+    // below
     if (x + 1 < grid.length) convertIslandToZero(x + 1, y, grid);
+
+    // left
+    if (y - 1 >= 0) convertIslandToZero(x, y - 1, grid);
+    // right
     if (y + 1 < grid[x].length) convertIslandToZero(x, y + 1, grid);
 
     return;
