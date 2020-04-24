@@ -63,33 +63,18 @@ var rangeBitwiseAnd = function(m, n) {
 
     if (m === 1) break;
 
-    let commonLog = m & n;
+    let commonLog = 2 ** (Math.floor(Math.log2(m)) & Math.floor(Math.log2(n)));
 
     finalLog += commonLog;
 
     m -= commonLog;
     n -= commonLog;
+
+    // console.log(commonLog)
   }
 
   return finalLog;
 
-  // if (Math.floor(Math.log2(n)) - Math.floor(Math.log2(m)) > 0) return 0;
-  // else {
-  //     if (n - m === 1) return m & n;
-  //     return 2 ** Math.floor(Math.log2(m));
-  // };
-
-  // brute force just loop through, O(n)
-
-  //     let finalBitWise = m;
-
-  //     for (let i = m; i <= n; i += 1) {
-  //         finalBitWise = finalBitWise & i;
-  //     }
-
-  //     return finalBitWise;
-
-  // yet we can find a pattern
 };
 
-console.log(rangeBitwiseAnd(33, 35));
+console.log(rangeBitwiseAnd());
