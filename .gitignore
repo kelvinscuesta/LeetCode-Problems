@@ -1,2 +1,3 @@
 node_modules
-study_guide.md
+study_guide.node_modules
+.env
