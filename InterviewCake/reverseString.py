@@ -35,9 +35,7 @@ def reverse2(list_of_chars):
     while left < right:
         list_of_chars[left], list_of_chars[right] =  list_of_chars[right], list_of_chars[left]
 
-    return list_of_chars
-
-    
+    return
 
 
 
